@@ -46,16 +46,16 @@ C:\Users\sinzy\
 
 サービスアカウントは Drive 容量が無いため、**先に画像を共有フォルダへ手動アップロード**する。
 
-1. 画像フォルダ: https://drive.google.com/drive/folders/1lBk5TQFmcA-Atygu0jV1NKGwT3o4kicB?usp=sharing  
-   （設定: `config/drive_staging.json`）
+1. 画像ステージング用の Drive フォルダへ `images/` をアップロード  
+   （フォルダ ID / URL は `config/drive_staging.json` を参照。README には書かない）
 2. 空の Google スライドを SA に編集者共有
 3. 実行:
 
 ```bash
 pip install -r requirements.txt
 python scripts/upload_to_slides.py ../youtube-videos/{slug} \
-  --presentation-id "https://docs.google.com/presentation/d/PRESENTATION_ID/edit" \
-  --image-folder-id "1lBk5TQFmcA-Atygu0jV1NKGwT3o4kicB"
+  --presentation-id "https://docs.google.com/presentation/d/PRESENTATION_ID/edit"
+  # --image-folder-id は省略可（config/drive_staging.json を使用）
 ```
 
 - 認証: `secrets/getstockdata05-service-account.json`
