@@ -1,0 +1,10 @@
+{
+  "image_folder_id": "1lBk5TQFmcA-Atygu0jV1NKGwT3o4kicB",
+  "image_folder_url": "https://drive.google.com/drive/folders/1lBk5TQFmcA-Atygu0jV1NKGwT3o4kicB?usp=sharing",
+  "notes": [
+    "Service account has no Drive storage quota, so it cannot upload local images.",
+    "User uploads images/ to this shared folder first, then runs upload_to_slides.py with --image-folder-id.",
+    "Share this folder with the service account as Viewer (or higher).",
+    "For presentations: create a blank Google Slides deck, share with SA as Editor, pass --presentation-id."
+  ]
+}

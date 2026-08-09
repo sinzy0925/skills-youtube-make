@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "title": "Cursorスキル入門",
+  "format": "presentation",
+  "aspect_ratio": "16:9",
+  "slides": [
+    {
+      "index": 1,
+      "slide_type": "opening",
+      "title": "Cursorスキルって何？",
+      "bullets": [
+        "エージェントに手順を教えるファイル",
+        "SKILL.md に書くだけ",
+        "動画制作も自動化できる"
+      ],
+      "narration": "こんにちは。今日はCursorのスキル機能について、3分でざっくり説明します。",
+      "image": "images/slide-01.png"
+    },
+    {
+      "index": 2,
+      "slide_type": "body",
+      "title": "スキルの基本",
+      "bullets": [
+        "SKILL.md にワークフローを書く",
+        "エージェントが自動で読み込む",
+        "個人用とプロジェクト用がある"
+      ],
+      "narration": "スキルは SKILL.md というファイルに、やりたい手順を書いておくだけです。",
+      "image": "images/slide-02.png"
+    }
+  ]
+}

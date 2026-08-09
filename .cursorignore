@@ -1,0 +1,14 @@
+﻿# 成果物はコンテキストに載せない（量が増える）
+output/
+
+# 認証情報
+secrets/
+
+# 会話ログ・エージェント transcript（巨大になりやすい）
+*.jsonl
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
