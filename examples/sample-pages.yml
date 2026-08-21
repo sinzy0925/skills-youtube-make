@@ -1,0 +1,39 @@
+# サンプル: 画像ファイル名・説明・ナレーションを1セットにしたページ定義
+# ルール: page 番号 = image_file の番号（001.png → page 1）
+
+version: 1
+title: ログイン手順マニュアル
+
+pages:
+  - page: 1
+    image_file: 001.png
+    description:
+      title: ログイン画面を開く
+      bullets:
+        - ブラウザでサイトにアクセス
+        - 右上の「ログイン」をクリック
+    narration: >
+      まずブラウザでサイトを開きます。
+      画面右上の「ログイン」ボタンをクリックしてください。
+
+  - page: 2
+    image_file: 002.png
+    description:
+      title: メールアドレスを入力
+      bullets:
+        - 登録済みのメールアドレスを入力
+        - 「次へ」をクリック
+    narration: >
+      次に、登録済みのメールアドレスを入力します。
+      入力が終わったら「次へ」ボタンを押してください。
+
+  - page: 3
+    image_file: 003.png
+    description:
+      title: 確認コードを入力
+      bullets:
+        - メールに届いたコードを入力
+        - ログイン完了
+    narration: >
+      メールに届いた確認コードを入力します。
+      入力後、ログインが完了します。

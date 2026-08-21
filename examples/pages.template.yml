@@ -1,0 +1,24 @@
+# 動画マニュアル用ページ定義（1ページ = 1セット）
+# コピーして {slug}-pages.yml などの名前で使う
+
+version: 1
+title: ""  # 動画・マニュアルのタイトル
+
+pages:
+  - page: 1
+    image_file: 001.png
+    description:
+      title: ""  # スライドに表示するタイトル
+      bullets:   # スライドに表示する要点（2〜3行以内）
+        - ""
+        - ""
+    narration: ""  # 読み上げナレーション（2〜4文・ですます調）
+
+  - page: 2
+    image_file: 002.png
+    description:
+      title: ""
+      bullets:
+        - ""
+        - ""
+    narration: ""

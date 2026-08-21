@@ -1,0 +1,27 @@
+# ページ定義 YAML のスキーマ説明（Gem / 手動編集用）
+#
+# 1ページ = 次の3つを1セットにする:
+#   - image_file : 画像ファイル名（001.png など）
+#   - description: スライドに載せる説明（title + bullets）
+#   - narration  : 読み上げナレーション
+#
+# 対応ルール:
+#   page 1 ↔ 001.png ↔ スライド 1
+#   page 2 ↔ 002.png ↔ スライド 2
+#   page N ↔ {N:03d}.png ↔ スライド N
+
+version: 1  # スキーマバージョン（整数）
+
+title: string  # 動画・マニュアル全体のタイトル
+
+pages:       # ページの配列（画像1枚につき1要素）
+  - page: integer          # ページ番号（1始まり）。image_file の番号と一致
+    image_file: string     # 例: 001.png（3桁ゼロ埋め）
+    description:
+      title: string        # スライドタイトル（短く）
+      bullets: string[]    # スライド要点（2〜3行以内推奨）
+    narration: string      # ナレーション本文（2〜4文・ですます調）
+
+# Gem への指示例:
+# 「添付画像を分析し、この YAML 形式で全ページ分を出力してください。
+#   image_file は 001.png 形式、page 番号と一致させてください。」
